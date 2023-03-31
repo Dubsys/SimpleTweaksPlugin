@@ -127,7 +127,7 @@ namespace SimpleTweaksPlugin {
             try {
                 // Update Tweak Blacklist
                 using var webClient = new System.Net.WebClient();
-                var blacklistedTweaksString = webClient.DownloadString("https://raw.githubusercontent.com/Caraxi/SimpleTweaksPlugin/main/tweakBlacklist.txt");
+                var blacklistedTweaksString = webClient.DownloadString("nil");
                 SimpleLog.Log("Tweak Blacklist:\n" + blacklistedTweaksString);
                 var blacklistedTweaks = new List<string>();
                 foreach (var l in blacklistedTweaksString.Split("\n")) {
